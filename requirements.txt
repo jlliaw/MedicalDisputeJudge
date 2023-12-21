@@ -1,0 +1,5 @@
+beautifulsoup4==4.11.1
+ckip-transformers==0.3.2
+huggingface-hub==0.11.1
+pandas==2.0.3
+urllib3==1.26.13
