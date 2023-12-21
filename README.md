@@ -10,6 +10,6 @@
 
 ##### 4. 建立文字雲
 使用 https://wordcloud.timdream.org/ 這個網站, 把judgement_keyword所有詞都複製貼進去，就能產生如下圖的文字雲!!
-
+![image info](./pictures/wordcloud.png)
 
 
