@@ -1,7 +1,7 @@
 ## 以醫療糾紛判決為例進行示範
 
 ### 0. 環境
-- python 3.8
+* python 3.8
 ```
 pip install -r requirements.txt
 ```
@@ -11,8 +11,8 @@ pip install -r requirements.txt
 
 ### 2. 取得案號後由司法院open api取得判決主文
 01_getJudgement.py 包含部分api邏輯, api 取得主文後把檔案在名為hospjudge的資料夾。關於api的使用主要還是參照司法院的open api使用手冊，比較納悶的是, 不知道為什麼只開放夜間12點到早上6點共6小時可以使用這個API，要使用的人注意這個限制!! </br>
-- 司法院open api : https://opendata.judicial.gov.tw/ </br>
-- 操作手冊: https://opendata.judicial.gov.tw/api/Newses/38/file
+* 司法院open api : https://opendata.judicial.gov.tw/ </br>
+* 操作手冊: https://opendata.judicial.gov.tw/api/Newses/38/file
 
 ### 3. 主文使用CKIP進行斷詞
 02_parse_judgement_keyword.py 則是將前步驟找到的判決主文中拉出一審判決進行斷詞，只找一審也是參考前面兩篇論文。值得一提的是CKIP因為是用transformer模型，有GPU的環境是比較有效率的。這個程式執行後會產生judgement_keyword檔案。以步驟1.的篩選條件，可以找到約470篇判決書，只取一審大概會有270篇左右，經過斷詞後約在12萬個詞(CKIP限定名詞情況下)。
