@@ -1,4 +1,11 @@
 ## 以醫療糾紛判決為例進行示範
+
+### 0. 環境
+- python 3.8
+```
+pip install -r requirements.txt
+```
+
 ### 1. 如何從司法院的裁判書系統以程式化方式得相關案號
 01_getJudgement.py 使用「醫療過失」為關鍵字，把「附民,交簡,交訴,交易,勞安」相關案例排除，主要是參考 https://ir.nctu.edu.tw/bitstream/11536/107626/1/8_2_6.pdf 以及 http://www.tsim.org.tw/article/A103/abstract/402/11%E6%9C%8823%E6%97%A5%E4%B8%8B%E5%8D%88/%E5%90%B3%E4%BF%8A%E7%A9%8E.pdf 兩篇論文的方式，並且僅找109年10月到12年9月間的判決。
 
