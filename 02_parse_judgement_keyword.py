@@ -18,7 +18,7 @@ def get_all_judgement(listpath):
 
     return f
 
-#
+##
 def word_sep(id, article_content):
     retlist = None
     text = None

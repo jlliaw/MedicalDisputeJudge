@@ -1,7 +1,7 @@
 ## 以醫療糾紛判決為例進行示範
 
 ### 0. 環境
-* python 3.8
+* python 3.8 以上
 ```
 pip install -r requirements.txt
 ```

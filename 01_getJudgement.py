@@ -1,5 +1,5 @@
 # 司法院裁判書系統檢索(https://judgment.judicial.gov.tw/FJUD/default.aspx)
-# 取得案號
+# 取得案號 
 # 由案號去司法院openapi取得對應判決
 
 import datetime
